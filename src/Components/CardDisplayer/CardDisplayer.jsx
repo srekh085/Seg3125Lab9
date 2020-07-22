@@ -23,12 +23,17 @@ function CardDisplay({ bookListImport, currentIndex, setCurrentIndex, ...rest })
 
     // const [currentIndex, setCurrentIndex] = useState[0];
     function addReview() {
-        // var reviewText = document.getElementById("personReview").value;
+        // var reviewText = document.getElementById("personReview").target.value;
         // var rating = value;
-        // var name = document.getElementById("name").value;
+        // var name = document.getElementById("name").target.value;
         // console.log(reviewText, " ", rating," ", name);
+        // console.log(rating, name, reviewText);
         console.log(rating, reviewerName, review);
-
+        // var completeRev = {rating: rating, name:reviewerName, review:review};
+        alert(t('Card.2')+": "+reviewerName+"\n"+t('Card.3')+": "+rating+"\n"+t('Card.6')+": "+review+"\nReview submitted! Thank you");
+        setRating(0);
+        setReview('');
+        setReviewerName('');
     }
     const [rating, setRating] = useState(0);
     const [reviewerName, setReviewerName] = useState(" ");
@@ -57,16 +62,7 @@ function CardDisplay({ bookListImport, currentIndex, setCurrentIndex, ...rest })
                     <h1>{bookList[currentIndex].name}</h1>
                     <p>{eval(str.toString())}</p>
                     {/* <p>{bookList[currentIndex].this[t('About.1')]}</p> */}
-                    {/* <button onClick={() => handleClick('en')} >
-                        English
-                    </button>
-                    <button onClick={() => handleClick('ko')} >
-                        Korean
-                    </button>
-                    <button onClick={() => handleClick('fr')} >
-                        French
-                    </button>
-                    <p>{t('Thanks.1')}</p> */}
+                    
                     {/* <p>{t('Home.1')}</p> */}
                 </div>
                 <Paper className="reviewSection" elevation="3">
@@ -112,9 +108,7 @@ function CardDisplay({ bookListImport, currentIndex, setCurrentIndex, ...rest })
                             <StyledRating
                                 name="simple-controlled"
                                 value={rating}
-                                onChange={(event, newValue) => {
-                                    setRating(newValue);
-                                }}
+                                onChange={(event) => setRating(event.target.value)}
                                 className="starsAdding"
                                 id="filled-required"
                             />
@@ -122,10 +116,12 @@ function CardDisplay({ bookListImport, currentIndex, setCurrentIndex, ...rest })
                                 required
                                 id="filled-required"
                                 label={t('Card.2')}
+                                value={reviewerName}
                                 variant="outlined"
                                 placeholder={t('Card.5')}
                                 className="reviewInput"
                                 inputProps={{ maxLength: 20 }}
+                                onChange={(event) => setReviewerName(event.target.value)}
                             // onChange={(event, newValue) => {
                             //     setReviewerName(newValue);
                             // }}
@@ -135,9 +131,11 @@ function CardDisplay({ bookListImport, currentIndex, setCurrentIndex, ...rest })
                                 id="filled-required"
                                 label={t('Card.6')}
                                 variant="outlined"
+                                value={review}
                                 placeholder={t('Card.7')}
                                 className="reviewInput"
                                 inputProps={{ maxLength: 160 }}
+                                onChange={(event) => setReview(event.target.value)}
                             // onChange={(event, newValue) => {
                             //     setReview(newValue);
                             // }}
@@ -149,7 +147,7 @@ function CardDisplay({ bookListImport, currentIndex, setCurrentIndex, ...rest })
                                 className="reviewInput"
                                 variant="contained"
                                 color="secondary"
-                                type="submit"
+                                type="button"
                                 onClick={() => addReview()}
                                 // className={classes.button}
                                 startIcon={<KeyboardArrowUpIcon />}
