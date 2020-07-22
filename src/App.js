@@ -1,25 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Home from "./Pages/Home.js";
+import {SciFi, Horror, Fantasy, Mystery, Error} from "./Pages";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/scifi" component={SciFi} />
+          <Route exact path="/fantasy" component={Fantasy} />
+          <Route exact path="/horror" component={Horror} />
+          <Route exact path="/mystery" component={Mystery} />
+          <Route component={Error} />
+        </Switch>
+      </BrowserRouter>
   );
 }
 

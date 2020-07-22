@@ -1,0 +1,60 @@
+
+{
+    "Thanks": {
+        "1": "Thank you"
+    },
+    "Home": {
+        "1": "is a place for readers to find their next book.",
+        "2": "It's that simple.",
+        "3": "You can browse",
+        "4": " through a collection of books for ",
+        "5": "each genre",
+        "6": ", going through all of them, ",
+        "7": "or select the genre",
+        "8": " you are interested in from ",
+        "9": "above.",
+        "10": "Feel free",
+        "11": " to go any route, you can ",
+        "12": "easily navigate",
+        "13": " to any genre. Our goal is to help you ",
+        "14": "explore",
+        "15": ", as much as you want.",
+        "16": "Each book has",
+        "17": " a brief About, some reviews, and a user score. Just enough to pique your interest.",
+        "18": "If you have already read a Book and liked it, feel free to ",
+        "19": "leave a review",
+        "20": " to help out your fellow Readers!",
+        "21":"Start"
+
+    },
+    "Nav": {
+        "1": "Sci-Fi",
+        "2": "Mystery",
+        "3": "Fantasy",
+        "4": "Horror",
+        "5": "Home",
+        "6": "Previous",
+        "7": "Next"
+    },
+    "Card": {
+        "1": "Reviews",
+        "2": "Name",
+        "3": "Rating",
+        "4": "Add a Review",
+        "5": "Max 20 Chars",
+        "6": "Your Review",
+        "7": "Max 160 Chars",
+        "8": "Submit",
+        "9": "Author",
+        "10": "Pages",
+        "11": "Year Published",
+        "12": "Genre"
+    },
+    "About": {
+        "1": "about"
+    },
+    "Error":{
+        "1": "Sorry! The page you have requested does not exist.",
+        "2": "You can go back to Home, or choose a Category from Above!"
+    }
+}

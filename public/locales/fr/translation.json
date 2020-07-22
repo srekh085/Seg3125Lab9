@@ -1,0 +1,58 @@
+{
+  "Thanks": {
+      "1": "french"
+  },
+  "Home": {
+    "1": "est un endroit où les lecteurs peuvent trouver leur prochain livre.",
+         "2": "C'est aussi simple que cela.",
+         "3": "Vous pouvez parcourir",
+         "4": "à travers une collection de livres pour",
+         "5": "chaque genre",
+         "6": ", en les parcourant tous",
+         "7": "ou sélectionnez le genre",
+         "8": "vous êtes intéressé par",
+         "9": "ci-dessus.",
+         "10": "N'hésitez pas",
+         "11": "pour suivre n'importe quel itinéraire, vous pouvez",
+         "12": "naviguer facilement",
+         "13": "à n'importe quel genre. Notre objectif est de vous aider",
+         "14": "explorer",
+         "15": ", autant que vous le souhaitez.",
+         "16": "Chaque livre a",
+         "17": "un bref propos, quelques critiques et un score utilisateur. Juste assez pour piquer votre intérêt.",
+         "18": "Si vous avez déjà lu un livre et que vous l'avez aimé, n'hésitez pas à",
+         "19": "laisser un avis",
+         "20": "pour aider vos collègues lecteurs!",
+         "21": "Commencer"
+},
+  "Nav": {
+    "1": "Sci-Fi",
+    "2": "Mystère",
+    "3": "Fantaisie",
+    "4": "Horreur",
+    "5": "Accueil",
+    "6": "Précédent",
+    "7": "Prochain"
+  },
+  "Card": {
+    "1": "Commentaires",
+    "2": "Nom",
+    "3": "Note",
+    "4": "Ajouter un avis",
+    "5": "Max 20 caractères",
+    "6": "Votre avis",
+    "7": "Max 160 caractères",
+    "8": "Soumettre",
+    "9": "Auteur",
+    "10": "Pages",
+    "11": "Année de publication",
+    "12": "Genre"
+  },
+  "About": {
+    "1": "aboutFr"
+  },
+  "Error": {
+    "1": "Désolé! La page que vous avez demandée n'existe pas.",
+    "2": "Vous pouvez retourner à la page d'accueil ou choisir une catégorie ci-dessus!"
+  }
+}
