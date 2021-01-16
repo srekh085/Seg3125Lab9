@@ -35,7 +35,7 @@ function CardDisplay({ bookListImport, currentIndex, setCurrentIndex, ...rest })
         setReview('');
         setReviewerName('');
     }
-    const [rating, setRating] = useState(0);
+    const [rating, setRating] = useState(1);
     const [reviewerName, setReviewerName] = useState(" ");
     const [review, setReview] = useState(" ");
     const StyledRating = withStyles({
@@ -122,6 +122,7 @@ function CardDisplay({ bookListImport, currentIndex, setCurrentIndex, ...rest })
                                 className="reviewInput"
                                 inputProps={{ maxLength: 20 }}
                                 onChange={(event) => setReviewerName(event.target.value)}
+                                helperText={t('Card.5')}
                             // onChange={(event, newValue) => {
                             //     setReviewerName(newValue);
                             // }}
@@ -135,6 +136,7 @@ function CardDisplay({ bookListImport, currentIndex, setCurrentIndex, ...rest })
                                 placeholder={t('Card.7')}
                                 className="reviewInput"
                                 inputProps={{ maxLength: 160 }}
+                                helperText={t('Card.7')}
                                 onChange={(event) => setReview(event.target.value)}
                             // onChange={(event, newValue) => {
                             //     setReview(newValue);
@@ -147,7 +149,7 @@ function CardDisplay({ bookListImport, currentIndex, setCurrentIndex, ...rest })
                                 className="reviewInput"
                                 variant="contained"
                                 color="secondary"
-                                type="button"
+                                type="submit"
                                 onClick={() => addReview()}
                                 // className={classes.button}
                                 startIcon={<KeyboardArrowUpIcon />}
