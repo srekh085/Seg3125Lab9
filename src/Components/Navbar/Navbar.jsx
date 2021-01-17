@@ -1,7 +1,7 @@
 import React from "react";
 import NavBarWrapper from "./NavBarWrapper";
 import { NavLink } from "react-router-dom";
-import { useTranslation } from 'react-i18next';
+// import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 import LanguageIcon from '@material-ui/icons/Language';
 import Button from '@material-ui/core/Button';
@@ -17,7 +17,7 @@ function NavItem(props) {
 }
 
 function NavBar(props) {
-    const { t } = useTranslation();
+    // const { t } = useTranslation();
 
     function handleClick(lang) {
         i18next.changeLanguage(lang)

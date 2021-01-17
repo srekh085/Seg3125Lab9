@@ -6,7 +6,7 @@ import TextField from '@material-ui/core/TextField';
 import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
 import Button from '@material-ui/core/Button';
 import { useTranslation } from 'react-i18next';
-import StarIcon from '@material-ui/icons/Star';
+// import StarIcon from '@material-ui/icons/Star';
 import { withStyles } from '@material-ui/core/styles';
 
 function CardDisplay({ bookListImport, currentIndex, setCurrentIndex, ...rest }) {
@@ -49,7 +49,7 @@ function CardDisplay({ bookListImport, currentIndex, setCurrentIndex, ...rest })
                 {/* <div className="cardContainer"> */}
                 <Paper className="statsAndImage" elevation="6">
                     <div className="imageContainer">
-                        <img src={bookList[currentIndex].img} alt="Book Cover image" className="coverImage" />
+                        <img src={bookList[currentIndex].img} alt="Book Cover" className="coverImage" />
                     </div>
                     <div className="statsBook">
                         <p className="stats author">{t('Card.9')}: {bookList[currentIndex].author}</p>

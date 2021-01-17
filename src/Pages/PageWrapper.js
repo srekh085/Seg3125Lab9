@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import bgblue from "../Images/bg-blue.jpg";
 export default styled.div`
 height: 100%;
 width:100%;

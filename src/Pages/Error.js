@@ -5,7 +5,7 @@ import DoubleArrowIcon from '@material-ui/icons/DoubleArrow';
 import { NavLink, Link } from "react-router-dom";
 import Paper from '@material-ui/core/Paper';
 import { useTranslation } from 'react-i18next';
-import i18next from 'i18next';
+// import i18next from 'i18next';
 import FeedbackIcon from '@material-ui/icons/Feedback';
 function Error() {
   const { t } = useTranslation();
