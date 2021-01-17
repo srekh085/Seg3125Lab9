@@ -1,3 +1,4 @@
+/* eslint no-eval: 0 */
 import React, { useState } from "react";
 import CardDisplayWrapper from "./CardDisplayWrapper";
 import Paper from '@material-ui/core/Paper';
